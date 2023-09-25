@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Lost and Found Portal</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /></head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>Lost<br>and<br>Found</h1>
+        </div>
+        <div id="navContainer">
+            <div id="searchBar">
+                <input type="text" id="searchItem" class="search-input" placeholder="Search for lost items...">
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+            </div>
+            <div class="Filter">
+                <button onclick="myFunction()" class="filterbtn">
+                    Filter <span class="material-symbols-outlined">
+                        filter_list
+                        </span>
+                </button>
+                <div id="myFilter" class="Filter-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="#1">one</a>
+                    <a href="#2">two</a>
+                    <a href="#3">three</a>
+                </div>
+            </div>
+            
+            <button id="raiseTicketBtn">Raise Ticket<b> +</b></button>
+            <button id="logoutBtn">Log Out</button>
+        </div>
+    </header>
+
+    <div class="lostandfound">
+        <div class="lost">
+            
+            <div class="status-box">Lost</div>
+            <img src="img1.jpg">
+            <div class="vertical-line"></div> <!-- Add a vertical line separator -->
+            <div class="details-section">
+                <h3 class="details">Details:</h3>
+                <div class="info">
+                    Red Color Hercules Cycle <br>Last Parked Himalaya Mess<br>Missing from 10th September, 2023
+                </div>
+            </div>
+            <div class="vertical-line"></div> <!-- Add a vertical line separator -->
+            <div class="contact-section">
+                <h3 class="contact">Contact:</h3>
+                <div class="cinfo">
+                    Aman Singh, CH21B011<br>8868857492<br>Hostel - Jamuna
+                </div>
+            </div>
+            <div class="arrow-container">
+                <div class="arr down"><div></div></div> <!-- Add the down arrow here -->
+            </div>
+        </div>
+    </div>
+
+<!-- New Found block -->
+<div class="lostandfound">
+    <div class="found">
+        <div class="status-box">Found</div>
+        <img src="img2.jpg"> <!-- Replace with your found item image -->
+        <div class="vertical-line"></div> <!-- Add a vertical line separator -->
+        <div class="details-section">
+            <h3 class="details">Details:</h3>
+            <div class="info">
+                Blue Color Hercules Cycle <br>Found at Nilgiri Mess <br>On 9th September, 2023
+            </div>
+        </div>
+        <div class="vertical-line"></div> <!-- Add a vertical line separator -->
+        <div class="contact-section">
+            <h3 class="contact">Contact:</h3>
+            <div class="cinfo">
+              Aman Singh, CH21B011 <br>8868857492<br>Hostel - Jamuna
+            </div>
+        </div>
+        <div class="arrow-container">
+            <div class="arr down"><div></div></div> <!-- Add the down arrow here -->
+        </div>
+    </div>
+
+    </div>
+   
+    <footer>
+        <!-- Your footer content goes here -->
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

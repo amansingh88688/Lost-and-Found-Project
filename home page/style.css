@@ -1,0 +1,324 @@
+/* Header styles */
+/* Updated CSS for the header */
+header {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{font-family: "Sofia", sans-serif;}
+#navContainer {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the search input and label */
+#searchBar {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 600px; /* Increase the width as needed */
+    position: relative;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;  }
+
+#searchItem {
+    background: none;
+    border: none;
+    font-size: 15px;
+    padding: 15px 20px;
+    width: 100%;
+}
+/* The search input when it gets focus/clicked on */
+#searchItem:focus {
+    outline: none; /* Remove the default focus outline */
+    border: 1px solid transparent; /* Set the border to transparent when focused */
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Adjust this value to move the icon inside */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555; 
+}
+.material-symbols-outlined{
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Adjust this value to move the icon inside */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555; 
+}
+    
+
+
+/* Style for the filter, raise ticket, and logout buttons */
+#raiseTicketBtn,
+#logoutBtn {
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 15px 20px; /* Set a fixed padding to make the buttons equal width */
+    margin-left: 15px;
+    transition: background-color 0.3s; /* Add a transition for smoother color change */
+    width: 150px; /* Set a fixed width for the buttons */
+    border-radius: 5px; /* Set the border radius */
+}
+
+#raiseTicketBtn {
+    background-color: lightblue;
+    color: black;
+    border-radius: 5px; /* Set the border radius similar to filter button */
+}
+
+#raiseTicketBtn:hover {
+    background-color: rgb(208, 211, 219);
+}
+
+#logoutBtn {
+    background-color: black;
+    color: white;
+    border-radius: 5px; /* Set the border radius similar to filter button */
+}
+
+#logoutBtn:hover {
+    background-color: rgb(113, 108, 108);
+}
+
+/* Filter Button */
+/* Filter Content (Hidden by Default) */
+.Filter-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 150px; /* Adjust the width as needed */
+    border: 1px solid #ddd;
+    z-index: 1;
+    top: 100%; /* Position it below the filter button */
+    left: 0;
+}
+
+/* Show the Filter content when .show class is applied */
+.Filter-content.show {
+    display: block;
+}
+
+
+/* The search field */
+#myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {
+    outline: 3px solid #ddd;
+}
+
+/* The container <div> - needed to position the Filter content */
+.Filter {
+    position: relative;
+    display: inline-block;
+}
+
+/* Filter Content (Hidden by Default) */
+.Filter-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+/* Links inside the Filter */
+.Filter-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of Filter links on hover */
+.Filter-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Filter Button */
+/* Filter Button */
+/* Style for the filter, raise ticket, and logout buttons */
+/* Filter Button */
+.filterbtn {
+    background-color: whitesmoke;
+    color: black;
+    padding: 15px 20px; /* Set the padding to match the raise ticket button */
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Set the border radius to match the raise ticket button */
+    width: 150px; /* Let the button width adjust to its content */
+    height: auto; /* Let the button height adjust to its content */
+    position: relative; /* Position relative for pseudo-element */
+}
+
+/* Filter button on hover & focus */
+.filterbtn:hover,
+.filterbtn:focus {
+    background-color: grey;
+}
+
+
+
+
+/* Arrow styles */
+.arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.arr.down {
+    height: 20px;
+    width: 20px;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    transform: rotate(45deg);
+}
+
+/* Lost and Found styles */
+.lostandfound {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lost {
+    display: flex;
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.lost img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.lost h3 {
+    margin: 0;
+    flex: 1;
+}
+
+.lost .info {
+    flex: 1;
+}
+
+.lost .contact {
+    margin-top: 10px;
+    flex: 1;
+}
+
+/* Other styles as needed for your content and footer */
+img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.details-section,
+.contact-section {
+    flex: 1;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+    margin: 0 20px;
+}
+/* Add styles for the status box */
+.lost {
+    position: relative; /* Ensure the parent container is relative */
+}
+
+.status-box {
+    background-color: red; /* Set the background color */
+    color: white; /* Set the text color */
+    padding: 5px 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2; /* Ensure it's above the image */
+}
+
+
+/* Additional CSS for the "Found" block */
+.found {
+    display: flex;
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.found img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.found h3 {
+    margin: 0;
+    flex: 1;
+}
+
+.found .info {
+    flex: 1;
+}
+
+.found .contact {
+    margin-top: 10px;
+    flex: 1;
+}
+
+/* Ensure the parent container is relative */
+.found {
+    position: relative;
+}
+
+/* Style for the status box */
+.found .status-box {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
